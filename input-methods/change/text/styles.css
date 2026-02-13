@@ -1,0 +1,31 @@
+:root {
+    --text-color: #000000;
+    --background-color: #f5f5f5;
+}
+[data-theme="dark"] {
+    --text-color: #ffffff;
+    --background-color: #121212;
+}
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    min-height: 1.5em;
+    text-align: center;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+p.custom {
+    color: var(--custom-color);
+}
