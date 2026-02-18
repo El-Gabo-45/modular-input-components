@@ -5,11 +5,13 @@ export function checker ({ checkboxSelector, targetElement, resetSelector, class
 
     if (!checkbox || !target || !resetBtn) return;
 
-    checkbox.addEventListener('change', (e) => {
+    checkbox.addEventListener('change', () => {
         target.classList.toggle(classname, checkbox.checked);
     })
-    resetBtn.addEventListener('click', () => {
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
         target.classList.remove(classname);
         checkbox.checked = false;
     })
+    }
 }

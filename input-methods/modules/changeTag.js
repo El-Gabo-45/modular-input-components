@@ -17,8 +17,10 @@ export function changeTag (inputSelector, buttonSelector, textClass) {
         p.textContent = e.target.value;
     })
 
-    resetBtn.addEventListener('click', () => {
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
         p.textContent = '';
         inputElement.value = '';
     })
+    }
 }
