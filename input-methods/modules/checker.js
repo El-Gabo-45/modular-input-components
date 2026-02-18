@@ -3,7 +3,7 @@ export function checker ({ checkboxSelector, targetElement, resetSelector, class
     const resetBtn = document.querySelector(resetSelector);
     const target = document.querySelector(targetElement);
 
-    if (!targetElement || !target || !resetBtn) return;
+    if (!checkbox || !target || !resetBtn) return;
 
     checkbox.addEventListener('change', (e) => {
         target.classList.toggle(classname, checkbox.checked);
