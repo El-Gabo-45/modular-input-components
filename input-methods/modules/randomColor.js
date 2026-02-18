@@ -1,4 +1,4 @@
-export function randomColor(targetElement, randomBtn, resetBtn) {
+export function randomColor({ targetElement, randomBtn, resetBtn }) {
     if (!targetElement || !randomBtn) return;
 
     randomBtn.addEventListener('dblclick', () => {

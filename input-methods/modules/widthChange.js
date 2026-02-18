@@ -1,4 +1,4 @@
-export function widthChange(targetElement, rangeSelector, resetSelector) {
+export function widthChange({ targetElement, rangeSelector, resetSelector }) {
     const rangeInput = document.querySelector(rangeSelector);
     const resetBtn = document.querySelector(resetSelector);
 

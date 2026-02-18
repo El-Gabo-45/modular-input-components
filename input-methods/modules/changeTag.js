@@ -1,4 +1,4 @@
-export function changeTag (inputSelector, buttonSelector, textClass) {
+export function changeTag ({ inputSelector, buttonSelector, textClass }) {
     const inputElement = document.querySelector(inputSelector);
     const resetBtn = document.querySelector(buttonSelector);
 

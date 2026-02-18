@@ -1,4 +1,8 @@
 import { widthChange } from '../../modules/widthChange.js';
 
 const blockElement = document.querySelector('.block');
-widthChange(blockElement, '.range-changer', '.reset-btn');
+widthChange({
+    targetElement: blockElement,
+    rangeSelector: '.range-changer',
+    resetSelector: '.reset-btn',
+})
