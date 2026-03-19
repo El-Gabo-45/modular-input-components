@@ -1,4 +1,4 @@
-import { randomColor } from '../modules/randomColor.js';
+import { randomColor } from '../../modules/randomColor.js';
 
 const targetElement = document.querySelector('.block');
 const randomBtn = document.querySelector('.random-color');
