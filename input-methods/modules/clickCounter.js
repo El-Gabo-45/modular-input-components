@@ -1,18 +1,23 @@
-export function clickCounter(element, btn) {
+export function clickCounter(element, resetbtn) {
     let count = 0;
-    function updateText() {
-        element.textContent = `${count}`
+    function render () {
+        element.textContent = count || '';
     }
-    element.addEventListener('click', ()=> {
-        count++;
-        updateText();
-    })
 
-    if (btn) {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            count = 0;
-            element.textContent = '';
-        });
+    function increment() {
+        count++;
+        render();
+    }
+
+    function reset(e) {
+        e.stopPropagation();
+        count = 0;
+        render();
+    }
+
+    document.addEventListener('click', increment);
+
+    if (resetbtn) {
+        resetbtn.addEventListener('click', reset);
     }
 }
