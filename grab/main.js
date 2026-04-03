@@ -1,4 +1,4 @@
-import { makeDraggable } from "../input-methods/modules/dragableItem.js";
+import { makeDraggable } from "../modules/dragableItem.js";
 
 const el = document.querySelector('.main-container');
 

@@ -1,7 +1,8 @@
-import { changeTag } from '../../modules/changeTag.js';
+import { changeTag } from '../../../modules/changeTag.js';
 
 changeTag({
-    inputSelector: ".text-generator",
-    buttonSelector: ".reset-btn",
+    inputElement: document.querySelector('.text-generator'),
+    resetBtn: document.querySelector('.reset-btn'),
+    container: document.querySelector('.main-container'),
     textClass: "generated-text"
 })

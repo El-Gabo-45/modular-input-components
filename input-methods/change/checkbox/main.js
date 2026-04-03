@@ -1,8 +1,8 @@
-import { checker } from '../../modules/checker.js';
+import { checker } from '../../../modules/checker.js';
 
 checker({
-    checkboxSelector: '.checkbox',
-    targetElement: '.block',
-    resetSelector: '.reset-btn',
+    checkboxSelector: document.querySelector('.checkbox'),
+    targetElement: document.querySelector('.block'),
+    resetBtn: document.querySelector('.reset-btn'),
     classname: 'custom'
 })
