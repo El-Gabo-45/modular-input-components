@@ -1,0 +1,40 @@
+:root {
+    --text-color: #ffffff;
+    --background-color: #f5f5f5;
+}
+[data-theme="dark"] {
+    --text-color: #000000;
+    --background-color: #121212;
+}
+body {
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.el1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 20vh;
+    width: 10%;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+}
+.result-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    height: auto;
+    width: auto;
+    color: #000;
+    white-space: pre-wrap;
+    font-family: monospace;
+}

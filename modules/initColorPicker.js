@@ -1,11 +1,8 @@
-export function initColorPicker({ targetElement, inputSelector, resetSelector }) {
+export function initColorPicker({ targetElement, inputSelector, resetBtn }) {
 
-    const inputElement = document.querySelector(inputSelector);
-    const resetBtn = document.querySelector(resetSelector);
+    if (!targetElement || !inputSelector) return;
 
-    if (!targetElement || !inputElement) return;
-
-    inputElement.addEventListener ('input', (e) => {
+    inputSelector.addEventListener ('input', (e) => {
     const selectedColor = e.target.value;
     targetElement.style.setProperty('--custom-color', selectedColor);
     targetElement.classList.add('custom')
